@@ -23,3 +23,9 @@ def hello_world():
 @app.route("/debug-sentry2")
 def trigger_error():
     division_by_zero = 1 / 0
+
+
+@app.route("/unknown-var")
+def unknown_var():
+    some_var = unknown + 1
+    return str(some_var)
