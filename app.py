@@ -29,3 +29,7 @@ def some_route():
 def some_other_route():
     return blipblop
 
+@app.route("/buggyroute")
+def buggy_route():
+    return something
+
