@@ -4,6 +4,7 @@ from sentry_sdk.integrations.flask import FlaskIntegration
 from dotenv import load_dotenv
 import os
 from sentry_sdk import add_breadcrumb
+from do_something import something
 
 load_dotenv()
 
@@ -23,11 +24,8 @@ def hello_world():
     return "Hello, World!"
 
 
-@app.route("/test1")
-def test1():
-    add_breadcrumb(
-        category="auth",
-        message="Authenticated user ",
-        level="info",
-    )
-    return hellohello
+@app.route("/test2")
+def test2():
+    var1 = something()
+    var1 += unknown_var
+    return "Bye"
