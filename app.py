@@ -24,3 +24,8 @@ def hello_world():
 def some_route():
     return some_var
 
+
+@app.route("/someroute")
+def some_route():
+    return blipblop
+
