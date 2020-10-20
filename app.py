@@ -26,6 +26,6 @@ def some_route():
 
 
 @app.route("/someroute")
-def some_route():
+def some_other_route():
     return blipblop
 
