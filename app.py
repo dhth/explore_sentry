@@ -37,3 +37,8 @@ def buggy_route():
 @app.route("/cmon")
 def cmon():
     return a_variable
+
+@app.route("/seriouslycmon")
+def seriously_cmon():
+    return a_freakin_variable
+
