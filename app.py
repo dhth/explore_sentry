@@ -29,3 +29,8 @@ def trigger_error():
 def unknown_var():
     some_var = unknown + 1
     return str(some_var)
+
+@app.route("/unknown-var2")
+def unknown_var_2():
+    some_var = unknown2 + 1
+    return str(some_var)
