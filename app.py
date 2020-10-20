@@ -10,6 +10,7 @@ sentry_sdk.init(
     dsn=os.getenv("SENTRY_DSN"),
     integrations=[FlaskIntegration()],
     traces_sample_rate=1.0,
+    environment="dev"
 )
 
 app = Flask(__name__)
@@ -33,3 +34,6 @@ def some_other_route():
 def buggy_route():
     return something
 
+@app.route("/cmon")
+def cmon():
+    return a_variable
