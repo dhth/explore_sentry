@@ -19,18 +19,3 @@ app = Flask(__name__)
 def hello_world():
     return "Hello, World!"
 
-
-@app.route("/debug-sentry2")
-def trigger_error():
-    division_by_zero = 1 / 0
-
-
-@app.route("/unknown-var")
-def unknown_var():
-    some_var = unknown + 1
-    return str(some_var)
-
-@app.route("/unknown-var2")
-def unknown_var_2():
-    some_var = unknown2 + 1
-    return str(some_var)
